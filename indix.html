@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+    <title>Document</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Merriweather:wght@300;400;700&display=swap');
+
+.redressed {
+	font-family: 'Redressed', cursive;
+}
+
+.merriweather  {
+	font-family: 'Merriweather', serif;
+}
+
+.cc-navbar {
+	background-color: goldenrod;
+	font-family: 'Merriweather', serif;
+	box-shadow: 1px 1px 3px goldenrod;
+	z-index: 99;
+}
+
+.cc-navbar .nav-link {
+	border-bottom: 1px solid transparent;
+	transition: padding-bottom 0.4s ease-in-out, border-color 0.3s ease;
+}
+
+.cc-navbar .nav-link:hover {
+	padding-bottom: 20px;
+	border-bottom-color: #811538;
+  color:#811538 ;
+}
+
+.banner,
+.order-form {
+    background: 
+    url(img/hero-image.png) center center fixed no-repeat;
+	background-size: cover;
+	height: 800px;
+}
+
+.order-form {
+	height: 500px;
+}
+
+.banner .banner-desc h1 {
+	font-size: 48px;
+	font-weight: 400;
+	color:#fff;
+}
+
+
+.btn-order {
+	color: #811538;
+	border-color: #811538;
+	transition: 0.5s;
+}
+
+.btn-order:hover,
+.btn-order:focus,
+.btn-order:active {
+	color: #fff;
+	background-color: #811538;
+}
+.card-title{
+
+position: relative;
+-webkit-text-stroke: 0.3vw white ;
+font-size: 40px;
+color: white;
+font-weight: 500;
+
+}
+.card-title::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height:80%;
+  color: gold;
+  -webkit-text-stroke: 0vw white;
+  border-right: 3px solid gold ;
+  overflow: hidden;
+  animation: Qatar 6s linear infinite;
+  font-family: 'Sevillana', cursive;
+}
+@keyframes Qatar {
+    0%,10%,100%{
+        width: 0;
+ }
+   70%,90%{
+    width: 50%;
+ }
+}
+#BB:hover{
+transform: rotate(5deg);
+transition: all 0.2s ease-in-out;
+color:#5b0d25;
+}
+.cardes { 
+    background-color:#fff ;
+    width: 18.25em;
+    box-shadow: 0 5px 15px gold ;
+     border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: scale(1.1);
+    background-image: url(carousel/bac.jpg);
+}
+.cardes:hover {
+    transform: scale(1.1);
+}
+.icon { 
+    color: goldenrod;
+    font-size: 8em;
+    text-align: center;
+}
+.info h3 {
+    color: gold;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin :10px;
+
+}
+.contenu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cards{
+}
+.CC span{
+text-transform: uppercase;
+display: block;
+font-family: 'Redressed', cursive;
+text-align: center;
+}
+.texte1{
+  color:#811538 ;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  animation: text 3s  infinite;
+  background-color: #fff;
+ 
+
+}
+.texte2{
+ font-size: 30px;
+color:#811538;
+} 
+@keyframes text {
+0%{
+  color: #fff;
+  margin-bottom:-40px;
+}
+30%{
+
+  letter-spacing: 25px;
+  margin-bottom: -40px;
+}
+85%{
+
+letter-spacing: 8px;
+margin-bottom: -40px;
+}
+
+
+}
+
+.fa-brands{
+  color: #fff;
+  width: 400px;
+}
+
+form{
+background-color: #fff;
+border-radius: 25px;
+text-shadow: 2px 2px white;
+}
+
+
+input{
+width: 100%;
+height: 100%;
+display: block;
+border-radius: 25px;
+padding: 8px 40px 8px 20px;
+border: none;
+}
+
+input:focus{
+outline: none;
+
+}
+
+</style>
+</head>
+<body>
+    <nav class=" cc-navbar navbar navbar-expand-lg position-fixed w-100 navbar-dark ">
+        <div class="container-fluid">
+            <img src="img/logo.svg" style="width: 10%;" alt="">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#bb">Stades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#service">Moment historique</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="forulaire.html">Ticket</a>
+              <li class="nav-item">
+                <a class=" btn btn-order rouded-0" href="match.html" >Classement</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <section class="banner d-flex justify-content-center align-items-center pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"><h1 class="py-3 redressed " style="font-size: 48px;font-weight: 400;color: #fff;">FIFA World Cup 2022 Qatar</h1>
+                  <P>
+                    <button id="BB" class="btn btn-outline-warning btn-lg me-5 rounded merriweather">Classement</button>
+                    <button id="BB" class="btn btn-outline-warning btn-lg rounded merriweather ">Welcome to Qatar</button>
+                 </P>
+                </div>
+                <div class="col-md-6">
+                  <img width="80%" src="img/mascot.png" alt="">
+                </div>
+              </div>
+            </div>
+        </div>  
+    </section>
+    <section class="available merriweather py-5" id="bb">
+      <div class="CC">
+        <span class="texte1">Stade du</span>
+        <span class="texte2">Mondial</span>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="card mb-3 my-5 border-0 rounded-0">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="carousel/_lusail-stadium-2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="carousel/lusail-stadium-3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="carousel/_lusail-stadium-2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title pb-3"  data-text="Stade Lusail">Stade Lusail</h5>
+                  <p class="card-text">Le Lusail Iconic Stadium doit accueillir le match d’ouverture et la finale de la Coupe du monde 2022. Cette arène en cours de construction pourra recevoir un peu plus de 86 000 personnes</p>
+                  <button id="BB" class="btn btn-outline-warning btn-lg me-5 rounded-0 merriweather mb-5 ">Plus d'inforamation..</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 my-5 border-0 rounded-0">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title pt-5 " data-text="Stade Al-Bayt " style="font-size:30px ;"> Stade Al-Bayt</h5>
+                  <p class="card-text  mb-5">Édifié à une cinquantaine de kilomètres au nord de Doha, accessible pour les supporters seulement par bus ou par taxi, a été construit en forme de tente de bédouins par l'architecte allemand Speer (décédé en 2017).</p>
+                  <button id="BB" class="btn btn-outline-warning btn-lg me-5 rounded-0 merriweather mb-5 ">Plus d'inforamation..</button>
+                </div>
+              </div>
+              <div class="col-md-6 my-5 border-0 rounded-0">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="carousel/Al-Bayt-Stadium-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="carousel/al-bayt-stadium-2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="carousel/al-bayt-stadium-2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                
+            </div>
+          </div>
+          <div class="card mb-3 my-5 border-0 rounded-0">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="carousel/_khalifast.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="carousel/khalifa.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="carousel/kalifa2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title pb-3" style="font-size: 30px ;" data-text="Stade international Khalifa" >Stade international Khalifa</h5>
+                  <p class="card-text">C'est le premier stade du Qatar construit en 1976 par l'architecte français Roger Taillibert (qui a également conçu le Parc des Princes à Paris achevé en 1972). L'enceinte a été rénovée en 2017.</p>
+                  <button id="BB" class="btn btn-outline-warning btn-lg me-5 rounded-0 merriweather mb-5 ">Plus d'inforamation..</button>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 my-5 border-0 rounded-0">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title pb-3" data-text="Stade Al-Janoub">Stade Al-Janoub </h5>
+                  <p class="card-text">L’Al-Janoub Stadium est une arène vraiment remarquable d’une capacité d’environ 40 000 spectateurs, conçue par la regrettée architecte Zaha Hadid.</p>
+                  <button id="BB" class="btn btn-outline-warning btn-lg me-5 rounded-0 merriweather  ">Plus d'inforamation..</button>
+              
+                  
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="carousel/al janoub stadium.gif" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="carousel/al-thumama-stadium-2.jpg"d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="carousel/al janoub stadium.gif" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cards" id="service">
+      <div class="CC">
+        <span class="texte1">moment</span>
+        <span class="texte2">historique</span>
+      </div>
+       <div class="contenu">
+        <div class="cardes">
+          <div class="icon">
+            <img src="mo1.jpg"width="100%" class="rounded img-fluid mb-7">
+          </div>    
+          <div class="info">
+            <h3>l’histoire du  Maroc </h3>
+            <p style="color: #ffff;">Coupe du monde 2022 : Le Maroc a écrit l’histoire et ouvre une nouvelle éspoire pour le football africain</p>
+          </div>
+        </div>
+       <div class="cardes">
+        <div class="icon">
+          <img src="SUD.webp" width="100%" class=" rounded img-fluid mb-9" >
+        </div>    
+        <div class="info">
+          <h3> Le Vectoire historique </h3>
+          <p style="color: #ffff;">Coupe du monde 2022 :L'Argentine, considérée comme l'un des grands favoris, a été surprise parl'Arabie saoudite(1-2).</p>
+        </div>
+      </div>
+      <div class="cardes">
+        <div class="icon">
+          <img src="tunis.jpg"width="100%" class=" rounded img-fluid mb-9">
+        </div>    
+        <div class="info">
+          <h3>Le Vectoire du Tunis </h3>
+          <p style="color: #ffff">Coupe du monde 2022 :France, considérée comme l'un des grands favoris, a été surprise par Tunis(1-0).</p>
+        </div>
+      </div>
+      <div class="cardes">
+        <div class="icon">
+          <img src="cm.jpeg"width="100%" class=" rounded img-fluid mb-9">
+        </div>    
+        <div class="info">
+          <h3>Le Vectoire du Cameron </h3>
+          <p style="color: #ffff">Coupe du monde 2022 :Brazil, considérée comme l'un des grands favoris, a été surprise par Tunis(1-0).</p>
+        </div>
+      </div>
+      <div class="cardes">
+        <div class="icon">
+          <img src="senigal.jpg"width="100%" class=" rounded img-fluid mb-9">
+        </div>    
+        <div class="info">
+          <h3>Qalifiication historique </h3>
+          <p style="color: #ffff">Les Lions de la Téranga ont réussir de qualification en huitièmes de finale.</p>
+        </div>
+      </div>
+      <div class="cardes">
+        <div class="icon">
+          <img src="image.jpg"width="100%" class=" rounded img-fluid mb-9">
+        </div>    
+        <div class="info">
+          <h3>élimination historique </h3>
+          <p style="color: #ffff"> Coupe du monde 2022 - Si elle a aussi affiché des lacunes défensives face au Japon (1-2),</p>
+        </div>
+      </div>
+     </div>
+    </section>
+    <section class="mt-9">
+      <div class="CC">
+        <span class="texte1">nouvelle du</span>
+        <span class="texte2">Mondial</span>
+      </div>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" style="box-shadow: 5px 5px 15px gold;" >
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="MO.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 style="font-weight: 600; color: gold; font-family:'Redressed', cursive; ;">«🦁 كلنا مع أسود الأطلس #»</h1>
+              <p style="font-weight: 500; color: #ffff;">Le Maroc a été la sensation de la Coupe du monde 2022, avec une quatrième place. Une nouvelle histoire débute désormais pour l'ensemble du football africain.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="mar.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 style="font-weight: 600; color: gold; font-family:'Redressed', cursive; ">Coupe du Monde 2022 : l’épopée historique du Maroc, célébrée bien au-delà des frontières🦁</h1>
+              <p style="font-weight: 500; color: #ffff;">Le Maroc a été la sensation de la Coupe du monde 2022, avec une quatrième place. Une nouvelle histoire débute désormais pour l'ensemble du football africain.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="ar.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 style="font-weight: 600; color: gold; font-family:'Redressed', cursive; ">Argentine champions du monde</h1>
+              <p style="font-weight: 500; color: #ffff;">Les Argentins sont champions du monde pour la 3e fois de leur histoire. Après un match nul 3-3, l'Argentine a battu la France aux tirs au but (4-2) en finale de la Coupe du Monde de la FIFA, Qatar 2022™. Les Argentins sont champions du monde pour la 3e fois de leur histoir</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <footer style="background-color: goldenrod;">
+      <div class="container pt-4">
+        <div class="row pb-3 d-flex align-items-center justify-content-center">
+          <div class="col-md-3">
+            <img src="footer/FIFA.webp" alt="" style="width: 40%;">
+          </div>
+          <div class="col-md-1">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="col-md-1">
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+          <div class="col-md-1">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="col-md-3 d-flex align-self-end"> 
+            <img src="footer/appleAppStore.png"  alt="" style="padding: 3px;">
+          </div>
+          <div class="col-md-3 d-flex align-self-end "> 
+            <img src="footer/googlePlay.png" alt="" style="padding: 3px;">
+          </div>
+          <hr style="color:#fff ;">
+        </div>
+        <div class="row">
+          <h5 style="text-align: center ;color: #811538;">FIFA WORLD CUP SPONSORS</h5>
+          <div class="col-4">
+            <ul class="nav flex-column">
+              <li class="nav-item" style="color: #fff;">
+                <a  class="nav-link active" aria-current="page" href="#"><img  src="footer/vivo.webp" alt=""></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=""><img src="footer/coca.webp" alt=""></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="footer/Qatar.webp" alt=""></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="footer/macdon.webp" alt=""></a>
+              </li>
+              <li class="nav-item">
+                <img src="footer/HYDI.webp" alt="" width="50%">
+              </li>
+              <li class="nav-item">
+                <img src="footer/addis.webp" alt="" width="40%">
+              </li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><img src="footer/VISA.webp" alt="" width="40%"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="footer/hise.webp" alt="" width="40%"></a>
+              </li>
+              <li class="nav-item pb-9">
+                  <form class="d-flex w-50" style="margin-top: 60px;">
+                    <input class="me-2" type="search" placeholder="chercher">
+                    <button style="border: none ;border-radius: 50%;" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                  </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="container-fluid text-center p-2  " style="color:white ; border: solid white; background-color: goldenrod;">
+     <p>Copyright © your Website 2022</p>  
+    </div>
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+    
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

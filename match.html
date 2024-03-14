@@ -1,0 +1,2242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+    <title>document</title>
+    <style>
+
+
+
+
+body{
+
+    font-family: 'Sevillana', cursive;
+
+   
+}
+.bg-primary{
+
+background-color: #811538 !important ;
+color: white;
+}
+.bg-secondary{
+background-color: #811538 !important ;
+color: white;
+
+}
+
+ #header-background{
+background-image: url("pattern.png");
+
+
+ }
+
+#header{
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 65%);
+    border-bottom: solid 20px #5b0d25;
+
+}
+#logo-header{
+position: absolute;
+z-index: 999;
+left: 100px;
+top: 60px;
+
+}
+#img{
+
+height: 300px;
+-webkit-filter: drop-shadow(5px 5px 30px #222);
+filter: drop-shadow(5px 5px 30px #222);
+
+
+}
+
+#h1{
+position: relative;
+-webkit-text-stroke: 0.3vw white ;
+font-size: 13vh;
+color: white;
+font-weight: 700;
+}
+
+
+#h1::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height:100%;
+  color: #811538;
+  -webkit-text-stroke: 0vw white;
+  border-right: 3px solid #811538 ;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+
+}
+@keyframes animate {
+    0%,10%,100%{
+        width: 0;
+
+ }
+   70%,90%{
+    width: 20%;
+ }
+    
+}
+#h2{
+
+position: relative;
+-webkit-text-stroke: 0.3vw white ;
+font-size: 13vh;
+color: white;
+font-weight: 700;
+
+}
+ 
+#h2::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height:100%;
+  color: #811538;
+  -webkit-text-stroke: 0vw white;
+  border-right: 3px solid #811538 ;
+  overflow: hidden;
+  animation: simo 6s linear infinite;
+
+}
+@keyframes simo {
+    0%,10%,100%{
+        width: 0;
+
+ }
+   70%,90%{
+    width: 50%;
+ }
+    
+}
+
+#h3{
+
+position: relative;
+-webkit-text-stroke: 0.3vw white ;
+font-size: 13vh;
+color: white;
+font-weight: 700;
+}
+#h3::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height:100%;
+  color: #811538;
+  -webkit-text-stroke: 0vw white;
+  border-right: 3px solid #811538 ;
+  overflow: hidden;
+  animation: mansour 6s linear infinite;
+}
+@keyframes mansour {
+    0%,10%,100%{
+        width: 0;
+
+ }
+   70%,90%{
+    width: 38%;
+ }
+    
+}
+
+
+footer{
+
+position: relative;
+width: 100%;
+background-color: #5b0d25;
+min-height: 100px;
+display: flex;
+align-items: flex-end;
+
+
+
+
+
+}
+
+</style>
+
+
+
+</head>
+<body>
+    <div id="logo-header">
+        <img id="img" src="logo (1).png" alt="">
+
+    </div>
+
+<!--Herder-->
+    <div id="header" style="height: 20rem"; class="bg-primary">
+        <div id="header-background" style="width:100% ;height: 100%;color: white;">
+            <div class="p-5" style="margin-right: 100px;">
+               <h2 style="text-align: right;font-size: 70px;font-weight: 800;">Coupe du</h2> 
+               <h2 class="m-4" style="text-align: right;font-size: 70px; font-weight: 800;">monde</h2>
+            </div>
+        </div>
+    </div>
+   <!--//Herder//--> 
+   <div class="d-flex justify-content-center mt-10">
+    <img src="qatar-word.png" alt="" style="width: 300px;">
+   </div>
+
+<div class="container justify-content-center" style="height: 100px;">
+    <div class="mt-2">
+        <div class="row">
+            <h1 id="h1" data-text="Groupes">
+                <b> Groupes</b> 
+              </h1>
+            <hr>
+        </div>
+        <!--/Groupe/-->
+        <div class="row" id="Groupes">
+            <div class="col-md-6 mb-3">
+                <div class="card shadow border-none" >
+                    <div class="card-header text-center bg-primary">
+                      <b style="font-family: cursive;monospace;">Groupe (A)</b>
+                    </div>
+
+                    <div class="row bg-secondary m-0">
+                        <div class="col-sm-4" style="text-align:center ;font-family: serif;">
+                         équipe
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                           V
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                            p
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                            D
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                           Pts
+                        </div>
+                    </div>
+                    <!--/equipe/-->
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                                <span class="flag">
+                                    <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/NTH.png" alt="">
+            
+                                </span>
+
+                                <h5 style="margin: auto 4px ;"><b>NTL</b></h5>
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                  2
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                   0
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                   1
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                  7
+                               </div>
+
+                        </div>
+                      </li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/SAN.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>SAN</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              2
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               0
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              7
+                           </div></li>
+                      <li class="list-group-item">
+                        <div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/ECU.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>ECU</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              4
+                           </div></li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/Qat.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>QAT</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              0
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               0
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               0
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              0
+                           </div></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card shadow border-none" >
+                    <div class="card-header text-center bg-primary">
+                      <b style="font-family: cursive;monospace;">Groupe (B)</b>
+                    </div>
+
+                    <div class="row bg-secondary m-0">
+                        <div class="col-sm-4" style="text-align:center ;font-family: serif;">
+                         équipe
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                           W
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                            L
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                            D
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                           Pts
+                        </div>
+                    </div>
+                    <!--/equipe/-->
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                                <span class="flag">
+                                    <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/ENG.png" alt="">
+            
+                                </span>
+
+                                <h5 style="margin: auto 4px ;"><b>ENG</b></h5>
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                  2
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                   0
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                   1
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                  7
+                               </div>
+
+                        </div>
+                      </li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/USA.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>USA</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               0
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                             2
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              5
+                           </div></li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/IRN.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>IRN</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               2
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               0
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              3
+                           </div></li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/wsl.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>WLS</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              0
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               2
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               2
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              1
+                           </div></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card shadow border-none" >
+                    <div class="card-header text-center bg-primary">
+                      <b style="font-family: cursive;monospace;">Groupe (C)</b>
+                    </div>
+
+                    <div class="row bg-secondary m-0">
+                        <div class="col-sm-4" style="text-align:center ;font-family: serif;">
+                         équipe
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                           W
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                            L
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                            D
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                           Pts
+                        </div>
+                    </div>
+                    <!--/equipe/-->
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                                <span class="flag">
+                                    <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/ARG.png" alt="">
+            
+                                </span>
+
+                                <h5 style="margin: auto 4px ;"><b>ARG</b></h5>
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                  2
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                   1
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                   0
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                  6
+                               </div>
+
+                        </div>
+                      </li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/POL.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>POL</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                            1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              4
+                           </div></li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/MEX.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>MEX</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              4
+                           </div></li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/KSA.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>KSA</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               0
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               0
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              3
+                           </div></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow border-none" >
+                    <div class="card-header text-center bg-primary">
+                      <b style="font-family: cursive;monospace;">Groupe (D)</b>
+                    </div>
+
+                    <div class="row bg-secondary m-0">
+                        <div class="col-sm-4" style="text-align:center ;font-family: serif;">
+                         équipe
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                           V
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                            P
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                            D
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                           Pts
+                        </div>
+                    </div>
+                    <!--/equipe/-->
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                                <span class="flag">
+                                    <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/FRN.png" alt="">
+            
+                                </span>
+
+                                <h5 style="margin: auto 4px ;"><b>FAR</b></h5>
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                  2
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                   0
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                   1
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                  6
+                               </div>
+
+                        </div>
+                      </li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/AUS.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>AUS</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              2
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               0
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              6
+                           </div></li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/TUN.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>TUN</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              4
+                           </div></li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/DNA.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>DAN</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              0
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               2
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              1
+                           </div></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="col-md-6 mt-">
+                <div class="card shadow border-none" >
+                    <div class="card-header text-center bg-primary">
+                      <b style="font-family: cursive;monospace;">Groupe (E)</b>
+                    </div>
+
+                    <div class="row bg-secondary m-0">
+                        <div class="col-sm-4" style="text-align:center ;font-family: serif;">
+                         équipe
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                           V
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                            P
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                            D
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                           Pts
+                        </div>
+                    </div>
+                    <!--/equipe/-->
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                                <span class="flag">
+                                    <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/JBN.png" alt="">
+            
+                                </span>
+
+                                <h5 style="margin: auto 4px ;"><b>JPN</b></h5>
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                  2
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                   0
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                   1
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                  6
+                               </div>
+
+                        </div>
+                      </li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/ESP.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>ESP</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              4
+                           </div></li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/GER.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;">GER</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              4
+                           </div></li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/CRC.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>CRC</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              2
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               0
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              b
+                           </div></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card shadow border-none" >
+                    <div class="card-header text-center bg-primary">
+                      <b style="font-family: cursive;monospace;">Groupe (F)</b>
+                    </div>
+
+                    <div class="row bg-secondary m-0">
+                        <div class="col-sm-4" style="text-align:center ;font-family: serif;">
+                         équipe
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                           V
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                            P
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                            D
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                           Pts
+                        </div>
+                    </div>
+                    <!--/equipe/-->
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                                <span class="flag">
+                                    <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/MAR.png" alt="">
+            
+                                </span>
+
+                                <h5 style="margin: auto 4px ;"><b>MAR</b></h5>
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                  <b>7</b>
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                   0
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                   1
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                  7
+                               </div>
+
+                        </div>
+                      </li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/CRO.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>CRO</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               2
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               0
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              7
+                           </div></li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/BLG.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>BLG</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                            1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              4
+                           </div></li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/CND.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>CND</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              0
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                            3
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                             0
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              0
+                           </div></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card shadow border-none" >
+                    <div class="card-header text-center bg-primary">
+                      <b style="font-family: cursive;monospace;">Groupe (G)</b>
+                    </div>
+
+                    <div class="row bg-secondary m-0">
+                        <div class="col-sm-4" style="text-align:center ;font-family: serif;">
+                         équipe
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                           V
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                            p
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                            D
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                           Pts
+                        </div>
+                    </div>
+                    <!--/equipe/-->
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                                <span class="flag">
+                                    <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/brz.png" alt="">
+            
+                                </span>
+
+                                <h5 style="margin: auto 4px ;"><b>BRA</b></h5>
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                  2
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                   0
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                   1
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                  6
+                               </div>
+
+                        </div>
+                      </li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/CIN.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>SUI</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              2
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               0
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              b
+                           </div></li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/CAM.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>CMR</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              4
+                           </div></li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/SER.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>SRB</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              0
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               0
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              1
+                           </div></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow border-none" >
+                    <div class="card-header text-center bg-primary">
+                      <b style="font-family: cursive;monospace; ">Groupe (E)</b>
+                    </div>
+
+                    <div class="row bg-secondary m-0">
+                        <div class="col-sm-4" style="text-align:center ;font-family: serif;">
+                         équipe
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                           V
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                            P
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                            D
+                        </div>
+                        <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                           Pts
+                        </div>
+                    </div>
+                    <!--/equipe/-->
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                                <span class="flag">
+                                    <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/POR.png" alt="">
+            
+                                </span>
+
+                                <h5 style="margin: auto 4px ;"><b>POR</b></h5>
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                  2
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                   0
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                   1
+                               </div>
+                               <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                                  6
+                               </div>
+
+                        </div>
+                      </li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/LL.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>KOR</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              4
+                           </div></li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/AUR.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>AUR</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              4
+                           </div></li>
+                      <li class="list-group-item"><div class="row">
+                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align:center ;font-family: serif;">
+                            <span class="flag">
+                                <img style="width: 30px ;height: 30px " class="rounded-circle " src="pays/GEN.png" alt="">
+        
+                            </span>
+
+                            <h5 style="margin: auto 4px ;"><b>NTL</b></h5>
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              1
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              2
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                               0
+                           </div>
+                           <div class="col-sm-2" style="text-align:center ;font-family: serif;">
+                              3
+                           </div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- MATCHES -->
+        <div>
+            <!-- TITLE ROW -->
+            <div class="row">
+               <h1 id="h2" data-text="  Huitiéme de final">
+                    <b>
+                        Huitiéme de final
+                    
+                    </b>
+                </h1>
+                <hr>
+            </div>
+            <!-- MATCHES ROW -->
+            <div class="row" id="matches" >
+                <!-- MATCH COL -->
+                <div class="col-sm-12 m-3">
+                    <div class="card shadow rounded-pill" style="overflow: hidden; font-family: serif;">
+                        <div class="card-body p-0">
+                            <div class="row" style="height: 120px;">
+                                <!-- FIRST TEAM COL -->
+                                <div 
+                                    class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                    style="border-right: solid 5px #5b0d25; "
+                                >
+                                    <div class="d-flex align-items-center justify-content-center" >
+                                        <!-- IMAGE AND TEAM NAME DIV -->
+                                        <div>
+                                            <div class="flag">
+                                                <img 
+                                                    style="width: 40px; height: 40px"
+                                                    class="rounded-circle"
+                                                    src="pays/FRN.png" alt=""
+                                                >
+                                            </div>
+
+                                            <h5 style="margin: auto 4px">
+                                                <b>FRA</b>
+                                            </h5>
+                                        </div>
+                                        <!--// IMAGE AND TEAM NAME DIV// -->
+                                    </div>
+                                </div>
+                                <!--// FIRST TEAM COL //-->
+
+                                <!-- MATCH INFO COL -->
+                                <div class="col-sm-6" style="text-align: center; font-family: serif; display: flex; align-items: center; justify-content: center;">
+                                    <h3>3</h3>
+                                    <h4> _X_ </h4>
+                                    <h3>1</h3>
+                                </div>
+                                <!--// MATCH INFO COL //-->
+
+
+                                <!-- SECOND TEAM COL -->
+                                <div 
+                                    class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                    style="border-left: solid 5px #5b0d25; "
+                                >
+
+                                    <div class="d-flex align-items-center justify-content-center" >
+                                        <!-- IMAGE AND TEAM NAME DIV -->
+                                        <div>
+                                            <div class="flag">
+                                                <img 
+                                                    style="width: 40px; height: 40px"
+                                                    class="rounded-circle"
+                                                    src="pays/POL.png" alt=""
+                                                >
+                                            </div>
+
+                                            <h5 style="margin: auto 4px">
+                                                <b>POL</b>
+                                            </h5>
+                                        </div>
+                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 m-3">
+                    <div class="card shadow rounded-pill" style="overflow: hidden; font-family: serif;">
+                        <div class="card-body p-0">
+                            <div class="row" style="height: 120px;">
+                                <!-- FIRST TEAM COL -->
+                                <div 
+                                    class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                    style="border-right: solid 5px #5b0d25; "
+                                >
+                                    <div class="d-flex align-items-center justify-content-center" >
+                                        <!-- IMAGE AND TEAM NAME DIV -->
+                                        <div>
+                                            <div class="flag">
+                                                <img 
+                                                    style="width: 40px; height: 40px"
+                                                    class="rounded-circle"
+                                                    src="pays/NTH.png" alt=""
+                                                >
+                                            </div>
+
+                                            <h5 style="margin: auto 4px">
+                                                <b>NED</b>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--// FIRST TEAM COL //-->
+
+                                <!-- MATCH INFO COL -->
+                                <div class="col-sm-6" style="text-align: center; font-family: serif; display: flex; align-items: center; justify-content: center;">
+                                    <h3>3</h3>
+                                    <h4> _X_ </h4>
+                                    <h3>1</h3>
+                                </div>
+                                <!--// MATCH INFO COL //-->
+
+
+                                <!-- SECOND TEAM COL -->
+                                <div 
+                                    class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                    style="border-left: solid 5px #5b0d25; "
+                                >
+
+                                    <div class="d-flex align-items-center justify-content-center" >
+                                        <!-- IMAGE AND TEAM NAME DIV -->
+                                        <div>
+                                            <div class="flag">
+                                                <img 
+                                                    style="width: 40px; height: 40px"
+                                                    class="rounded-circle"
+                                                    src="pays/USA.png" alt=""
+                                                >
+                                            </div>
+
+                                            <h5 style="margin: auto 4px">
+                                                <b>USA</b>
+                                            </h5>
+                                        </div>
+                                        <!--// IMAGE AND TEAM NAME DIV// -->
+                                    </div>
+                                </div>
+                                <!--// SECOND TEAM COL //-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 m-3">
+                    <div class="card shadow rounded-pill" style="overflow: hidden; font-family: serif;">
+                        <div class="card-body p-0">
+                            <div class="row" style="height: 120px;">
+                                <!-- FIRST TEAM COL -->
+                                <div 
+                                    class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                    style="border-right: solid 5px #5b0d25; "
+                                >
+                                    <div class="d-flex align-items-center justify-content-center" >
+                                        <!-- IMAGE AND TEAM NAME DIV -->
+                                        <div>
+                                            <div class="flag">
+                                                <img 
+                                                    style="width: 40px; height: 40px"
+                                                    class="rounded-circle"
+                                                    src="pays/ARG.png" alt=""
+                                                >
+                                            </div>
+
+                                            <h5 style="margin: auto 4px">
+                                                <b>ARG</b>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--// FIRST TEAM COL //-->
+
+                                <!-- MATCH INFO COL -->
+                                <div class="col-sm-6" style="text-align: center; font-family: serif; display: flex; align-items: center; justify-content: center;">
+                                    <h3>2</h3>
+                                    <h4> _X_ </h4>
+                                    <h3>1</h3>
+                                </div>
+                                <!--// MATCH INFO COL //-->
+
+
+                                <!-- SECOND TEAM COL -->
+                                <div 
+                                    class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                    style="border-left: solid 5px #5b0d25; "
+                                >
+
+                                    <div class="d-flex align-items-center justify-content-center" >
+                                        <!-- IMAGE AND TEAM NAME DIV -->
+                                        <div>
+                                            <div class="flag">
+                                                <img 
+                                                    style="width: 40px; height: 40px"
+                                                    class="rrounded-circle"
+                                                    src="pays/AUS.png" alt="">
+                                            </div>
+
+                                            <h5 style="margin: auto 4px">
+                                                <b>AUS</b>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="card shadow rounded-pill" style="overflow: hidden; font-family: serif;">
+                        <div class="card-body p-0">
+                            <div class="row" style="height: 120px;">
+                                <!-- FIRST TEAM COL -->
+                                <div 
+                                    class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                    style="border-right: solid 5px #5b0d25; "
+                                >
+                                    <div class="d-flex align-items-center justify-content-center" >
+                                        <!-- IMAGE AND TEAM NAME DIV -->
+                                        <div>
+                                            <div class="flag">
+                                                <img 
+                                                    style="width: 40px; height: 40px"
+                                                    class="rounded-circle"
+                                                    src="pays/ENG.png" alt=""
+                                                >
+                                            </div>
+
+                                            <h5 style="margin: auto 4px">
+                                                <b>ENG</b>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--// FIRST TEAM COL //-->
+
+                                <!-- MATCH INFO COL -->
+                                <div class="col-sm-6" style="text-align: center; font-family: serif; display: flex; align-items: center; justify-content: center;">
+                                    <h3>3</h3>
+                                    <h4> _X_ </h4>
+                                    <h3>0</h3>
+                                </div>
+                                <!--// MATCH INFO COL //-->
+
+
+                                <!-- SECOND TEAM COL -->
+                                <div 
+                                    class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                    style="border-left: solid 5px #5b0d25; "
+                                >
+
+                                    <div class="d-flex align-items-center justify-content-center" >
+                                        <!-- IMAGE AND TEAM NAME DIV -->
+                                        <div>
+                                            <div class="flag">
+                                                <img 
+                                                    style="width: 40px; height: 40px"
+                                                    class="rounded-circle"
+                                                    src="pays/SAN.png" alt=""
+                                                >
+                                            </div>
+
+                                            <h5 style="margin: auto 4px">
+                                                <b>SAN</b>
+                                            </h5>
+                                        </div>
+                                        <!--// IMAGE AND TEAM NAME DIV// -->
+                                    </div>
+                                </div>
+                                <!--// SECOND TEAM COL //-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 m-3">
+                    <div class="card shadow rounded-pill" style="overflow: hidden; font-family: serif;">
+                        <div class="card-body p-0">
+                            <div class="row" style="height: 120px;">
+                                <!-- FIRST TEAM COL -->
+                                <div 
+                                    class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                    style="border-right: solid 5px #5b0d25; "
+                                >
+                                    <div class="d-flex align-items-center justify-content-center" >
+                                        <!-- IMAGE AND TEAM NAME DIV -->
+                                        <div>
+                                            <div class="flag">
+                                                <img 
+                                                    style="width: 40px; height: 40px"
+                                                    class="rounded-circle"
+                                                    src="pays/JBN.png" alt=""
+                                                >
+                                            </div>
+
+                                            <h5 style="margin: auto 4px">
+                                                <b>JPN</b>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- MATCH INFO COL -->
+                                <div class="col-sm-6" style="text-align: center; font-family: serif; display: flex; align-items: center; justify-content: center;">
+                                    (1)<h3> 1</h3>
+                                    <h4> _X_ </h4> 
+                                    <h3>1</h3>(4)
+                                </div>
+                                <!--// MATCH INFO COL //-->
+
+
+                                <!-- SECOND TEAM COL -->
+                                <div 
+                                    class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                    style="border-left: solid 5px #5b0d25; "
+                                >
+
+                                    <div class="d-flex align-items-center justify-content-center" >
+                                        <!-- IMAGE AND TEAM NAME DIV -->
+                                        <div>
+                                            <div class="flag">
+                                                <img 
+                                                    style="width: 40px; height: 40px"
+                                                    class="rounded-circle"
+                                                    src="pays/CRO.png" alt=""
+                                                >
+                                            </div>
+
+                                            <h5 style="margin: auto 4px">
+                                                <b>CRO</b>
+                                            </h5>
+                                        </div>
+                                        <!--// IMAGE AND TEAM NAME DIV// -->
+                                    </div>
+                                </div>
+                                <!--// SECOND TEAM COL //-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 m-3">
+                    <div class="card shadow rounded-pill" style="overflow: hidden; font-family: serif;">
+                        <div class="card-body p-0">
+                            <div class="row" style="height: 120px;">
+                                <!-- FIRST TEAM COL -->
+                                <div 
+                                    class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                    style="border-right: solid 5px #5b0d25; "
+                                >
+                                    <div class="d-flex align-items-center justify-content-center" >
+                                        <!-- IMAGE AND TEAM NAME DIV -->
+                                        <div>
+                                            <div class="flag">
+                                                <img 
+                                                    style="width: 40px; height: 40px"
+                                                    class="rounded-circle"
+                                                    src="pays/brz.png" alt=""
+                                                >
+                                            </div>
+
+                                            <h5 style="margin: auto 4px">
+                                                <b>BRA</b>
+                                            </h5>
+                                        </div>
+                                        <!--// IMAGE AND TEAM NAME DIV// -->
+                                    </div>
+                                </div>
+                                <!--// FIRST TEAM COL //-->
+
+                                <!-- MATCH INFO COL -->
+                                <div class="col-sm-6" style="text-align: center; font-family: serif; display: flex; align-items: center; justify-content: center;">
+                                    <h3>4</h3>
+                                    <h4> _X_ </h4>
+                                    <h3>1</h3>
+                                </div>
+                                <!--// MATCH INFO COL //-->
+
+
+                                <!-- SECOND TEAM COL -->
+                                <div 
+                                    class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                    style="border-left: solid 5px #5b0d25; "
+                                >
+
+                                    <div class="d-flex align-items-center justify-content-center" >
+                                        <!-- IMAGE AND TEAM NAME DIV -->
+                                        <div>
+                                            <div class="flag">
+                                                <img 
+                                                    style="width: 40px; height: 40px"
+                                                    class="rounded-circle"
+                                                    src="pays/KOR.png" alt=""
+                                                >
+                                            </div>
+
+                                            <h5 style="margin: auto 4px">
+                                                <b>KOR</b>
+                                            </h5>
+                                        </div>
+                                        <!--// IMAGE AND TEAM NAME DIV// -->
+                                    </div>
+                                </div>
+                                <!--// SECOND TEAM COL //-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 m-3">
+                    <div class="card shadow rounded-pill" style="overflow: hidden;font-family: serif;">
+                        <div class="card-body p-0">
+                            <div class="row" style="height: 120px;">
+                                <!-- FIRST TEAM COL -->
+                                <div 
+                                    class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                    style="border-right: solid 5px #5b0d25; "
+                                >
+                                    <div class="d-flex align-items-center justify-content-center" >
+                                        <!-- IMAGE AND TEAM NAME DIV -->
+                                        <div>
+                                            <div class="flag">
+                                                <img 
+                                                    style="width: 40px; height: 40px"
+                                                    class="rounded-circle"
+                                                    src="pays/POR.png" alt=""
+                                                >
+                                            </div>
+
+                                            <h5 style="margin: auto 4px">
+                                                <b>POR</b>
+                                            </h5>
+                                        </div>
+                                        <!--// IMAGE AND TEAM NAME DIV// -->
+                                    </div>
+                                </div>
+                                <!--// FIRST TEAM COL //-->
+
+                                <!-- MATCH INFO COL -->
+                                <div class="col-sm-6" style="text-align: center; font-family: serif; display: flex; align-items: center; justify-content: center;">
+                                    <h3>6</h3>
+                                    <h4> _X_ </h4>
+                                    <h3>1</h3>
+                                </div>
+                                <!--// MATCH INFO COL //-->
+
+
+                                <!-- SECOND TEAM COL -->
+                                <div 
+                                    class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                    style="border-left: solid 5px #5b0d25; "
+                                >
+
+                                    <div class="d-flex align-items-center justify-content-center" >
+                                        <!-- IMAGE AND TEAM NAME DIV -->
+                                        <div>
+                                            <div class="flag">
+                                                <img 
+                                                    style="width: 40px; height: 40px"
+                                                    class="rounded-circle"
+                                                    src="pays/CIN.png" alt=""
+                                                >
+                                            </div>
+
+                                            <h5 style="margin: auto 4px">
+                                                <b>SUI</b>
+                                            </h5>
+                                        </div>
+                                        <!--// IMAGE AND TEAM NAME DIV// -->
+                                    </div>
+                                </div>
+                                <!--// SECOND TEAM COL //-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-sm-12 m-3">
+                        <div class="card shadow rounded-pill" style="overflow: hidden;font-family: serif;">
+                            <div class="card-body p-0">
+                                <div class="row" style="height: 120px;">
+                                    <!-- FIRST TEAM COL -->
+                                    <div 
+                                        class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                        style="border-right: solid 5px #5b0d25; "
+                                    >
+                                        <div class="d-flex align-items-center justify-content-center" >
+                                            <!-- IMAGE AND TEAM NAME DIV -->
+                                            <div>
+                                                <div class="flag">
+                                                    <img 
+                                                        style="width: 40px; height: 40px"
+                                                        class="rounded-circle"
+                                                        src="pays/MAR.png" alt=""
+                                                    >
+                                                </div>
+    
+                                                <h5 style="margin: auto 4px">
+                                                    <b>MAR</b>
+                                                </h5>
+                                            </div>
+                                            <!--// IMAGE AND TEAM NAME DIV// -->
+                                        </div>
+                                    </div>
+                                    <!--// FIRST TEAM COL //-->
+    
+                                    <!-- MATCH INFO COL -->
+                                    <div class="col-sm-6" style="text-align: center; font-family: serif; display: flex; align-items: center; justify-content: center;">
+                                        (3)<h3>0</h3>
+                                        <h4> _X_ </h4>
+                                        <h3>0</h3>(0)
+                                    </div>
+                                    <!--// MATCH INFO COL //-->
+    
+    
+                                    <!-- SECOND TEAM COL -->
+                                    <div 
+                                        class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                        style="border-left: solid 5px #5b0d25; "
+                                    >
+    
+                                        <div class="d-flex align-items-center justify-content-center" >
+                                            <!-- IMAGE AND TEAM NAME DIV -->
+                                            <div>
+                                                <div class="flag">
+                                                    <img 
+                                                        style="width: 40px; height: 40px"
+                                                        class="rounded-circle"
+                                                        src="pays/ESP.png"  alt=""
+                                                    >
+                                                </div>
+    
+                                                <h5 style="margin: auto 4px">
+                                                    <b>ESP</b>
+                                                </h5>
+                                            </div>
+                                            <!--// IMAGE AND TEAM NAME DIV// -->
+                                        </div>
+                                    </div>
+                                    <!--// SECOND TEAM COL //-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h1 id="h3" data-text="Quart de final">
+                             <b>
+                                Quart de final
+
+                    
+                             </b>
+                        </h1>
+                        <hr>
+                                    
+                    </div>
+                    <div class="col-sm-12 m-3">
+                        <div class="card shadow rounded-pill" style="overflow: hidden; font-family: serif; ">
+                            <div class="card-body p-0">
+                                <div class="row" style="height: 120px;">
+                                    <!-- FIRST TEAM COL -->
+                                    <div 
+                                        class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                        style="border-right: solid 5px #5b0d25; "
+                                    >
+                                        <div class="d-flex align-items-center justify-content-center" >
+                                            <!-- IMAGE AND TEAM NAME DIV -->
+                                            <div>
+                                                <div class="flag">
+                                                    <img 
+                                                        style="width: 40px; height: 40px"
+                                                        class="rounded-circle"
+                                                        src="pays/MAR.png" alt=""
+                                                    >
+                                                </div>
+    
+                                                <h5 style="margin: auto 4px">
+                                                    <b>MAR</b>
+                                                </h5>
+                                            </div>
+                                            <!--// IMAGE AND TEAM NAME DIV// -->
+                                        </div>
+                                    </div>
+                                    <!--// FIRST TEAM COL //-->
+    
+                                    <!-- MATCH INFO COL -->
+                                    <div class="col-sm-6" style="text-align: center; font-family: serif; display: flex; align-items: center; justify-content: center;">
+                                        <h3>1</h3>
+                                        <h4> _X_ </h4>
+                                        <h3>2</h3>
+                                    </div>
+                                    <!--// MATCH INFO COL //-->
+    
+    
+                                    <!-- SECOND TEAM COL -->
+                                    <div 
+                                        class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                        style="border-left: solid 5px #5b0d25; "
+                                    >
+                                        <div class="d-flex align-items-center justify-content-center" >
+                                            <!-- IMAGE AND TEAM NAME DIV -->
+                                            <div>
+                                                <div class="flag">
+                                                    <img 
+                                                        style="width: 40px; height: 40px"
+                                                        class="rounded-circle"
+                                                        src="pays/POR.png" alt=""
+                                                    >
+                                                </div>
+    
+                                                <h5 style="margin: auto 4px">
+                                                    <b>POR</b>
+                                                </h5>
+                                            </div>
+                                            <!--// IMAGE AND TEAM NAME DIV// -->
+                                        </div>
+                                    </div>
+                                    <!--// SECOND TEAM COL //-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 m-3">
+                        <div class="card shadow rounded-pill" style="overflow: hidden; font-family: serif;">
+                            <div class="card-body p-0">
+                                <div class="row" style="height: 120px;">
+                                    <!-- FIRST TEAM COL -->
+                                    <div 
+                                        class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                        style="border-right: solid 5px #5b0d25; "
+                                    >
+                                        <div class="d-flex align-items-center justify-content-center" >
+                                            <!-- IMAGE AND TEAM NAME DIV -->
+                                            <div>
+                                                <div class="flag">
+                                                    <img 
+                                                        style="width: 40px; height: 40px"
+                                                        class="rounded-circle"
+                                                        src="pays/ENG.png" alt=""
+                                                    >
+                                                </div>
+    
+                                                <h5 style="margin: auto 4px">
+                                                    <b>ENG</b>
+                                                </h5>
+                                            </div>
+                                            <!--// IMAGE AND TEAM NAME DIV// -->
+                                        </div>
+                                    </div>
+                                    <!--// FIRST TEAM COL //-->
+    
+                                    <!-- MATCH INFO COL -->
+                                    <div class="col-sm-6" style="text-align: center; font-family: serif; display: flex; align-items: center; justify-content: center;">
+                                        <h3>1</h3>
+                                        <h4> _X_ </h4>
+                                        <h3>1</h3>
+                                    </div>
+                                    <!--// MATCH INFO COL //-->
+    
+    
+                                    <!-- SECOND TEAM COL -->
+                                    <div 
+                                        class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                        style="border-left: solid 5px #5b0d25; "
+                                    >
+    
+                                        <div class="d-flex align-items-center justify-content-center" >
+                                            <!-- IMAGE AND TEAM NAME DIV -->
+                                            <div>
+                                                <div class="flag">
+                                                    <img 
+                                                        style="width: 40px; height: 40px"
+                                                        class="rounded-circle"
+                                                        src="pays/FRN.png" alt=""
+                                                    >
+                                                </div>
+    
+                                                <h5 style="margin: auto 4px">
+                                                    <b>FRA</b>
+                                                </h5>
+                                            </div>
+                                            <!--// IMAGE AND TEAM NAME DIV// -->
+                                        </div>
+                                    </div>
+                                    <!--// SECOND TEAM COL //-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 m-3">
+                        <div class="card shadow rounded-pill" style="overflow: hidden; font-family: serif;">
+                            <div class="card-body p-0">
+                                <div class="row" style="height: 120px;">
+                                    <!-- FIRST TEAM COL -->
+                                    <div 
+                                        class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                        style="border-right: solid 5px #5b0d25; "
+                                    >
+                                        <div class="d-flex align-items-center justify-content-center" >
+                                            <!-- IMAGE AND TEAM NAME DIV -->
+                                            <div>
+                                                <div class="flag">
+                                                    <img 
+                                                        style="width: 40px; height: 40px"
+                                                        class="rounded-circle"
+                                                        src="pays/CRO.png" alt=""
+                                                    >
+                                                </div>
+    
+                                                <h5 style="margin: auto 4px">
+                                                    <b>CRO</b>
+                                                </h5>
+                                            </div>
+                                            <!--// IMAGE AND TEAM NAME DIV// -->
+                                        </div>
+                                    </div>
+                                    <!--// FIRST TEAM COL //-->
+    
+                                    <!-- MATCH INFO COL -->
+                                    <div class="col-sm-6" style="text-align: center; font-family: serif; display: flex; align-items: center; justify-content: center;">
+                                        (4)<h3>1</h3>
+                                        <h4> _X_ </h4>
+                                        <h3>1</h3>(2)
+                                    </div>
+                                    <!--// MATCH INFO COL //-->
+    
+    
+                                    <!-- SECOND TEAM COL -->
+                                    <div 
+                                        class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                        style="border-left: solid 5px #5b0d25; "
+                                    >
+    
+                                        <div class="d-flex align-items-center justify-content-center" >
+                                            <!-- IMAGE AND TEAM NAME DIV -->
+                                            <div>
+                                                <div class="flag">
+                                                    <img 
+                                                        style="width: 40px; height: 40px"
+                                                        class="rounded-circle"
+                                                        src="pays/brz.png" alt=""
+                                                    >
+                                                </div>
+    
+                                                <h5 style="margin: auto 4px">
+                                                    <b>BRA</b>
+                                                </h5>
+                                            </div>
+                                            <!--// IMAGE AND TEAM NAME DIV// -->
+                                        </div>
+                                    </div>
+                                    <!--// SECOND TEAM COL //-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>               
+                    </div>
+                    <div class="col-sm-12 m-3">
+                        <div class="card shadow rounded-pill" style="overflow: hidden; font-family: serif;">
+                            <div class="card-body p-0">
+                                <div class="row" style="height: 120px;">
+                                    <!-- FIRST TEAM COL -->
+                                    <div 
+                                        class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                        style="border-right: solid 5px #5b0d25; "
+                                    >
+                                        <div class="d-flex align-items-center justify-content-center" >
+                                            <!-- IMAGE AND TEAM NAME DIV -->
+                                            <div>
+                                                <div class="flag">
+                                                    <img 
+                                                        style="width: 40px; height: 40px"
+                                                        class="rounded-circle"
+                                                        src="pays/ARG.png" alt=""
+                                                    >
+                                                </div>
+    
+                                                <h5 style="margin: auto 4px">
+                                                    <b> ARG</b>
+                                                </h5>
+                                            </div>
+                                            <!--// IMAGE AND TEAM NAME DIV// -->
+                                        </div>
+                                    </div>
+                                    <!--// FIRST TEAM COL //-->
+    
+                                    <!-- MATCH INFO COL -->
+                                    <div class="col-sm-6" style="text-align: center; font-family: serif; display: flex; align-items: center; justify-content: center;">
+                                        (4)<h3>2</h3>
+                                        <h4> _X_ </h4>
+                                        <h3>2</h3>(2)
+                                    </div>
+                                    <!--// MATCH INFO COL //-->
+    
+    
+                                    <!-- SECOND TEAM COL -->
+                                    <div 
+                                        class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                        style="border-left: solid 5px #5b0d25; "
+                                    >
+    
+                                        <div class="d-flex align-items-center justify-content-center" >
+                                            <!-- IMAGE AND TEAM NAME DIV -->
+                                            <div>
+                                                <div class="flag">
+                                                    <img 
+                                                        style="width: 40px; height: 40px"
+                                                        class="rounded-circle"
+                                                        src="pays/NTH.png" >
+                                                </div>
+    
+                                                <h5 style="margin: auto 4px">
+                                                    <b>NED</b>
+                                                </h5>
+                                            </div>
+                                            <!--// IMAGE AND TEAM NAME DIV// -->
+                                        </div>
+                                    </div>
+                                    <!--// SECOND TEAM COL //-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h1 id="h3" data-text="Demi de final">
+                             <b>
+                                 Demi de final
+                             </b>
+                        </h1>
+                        <hr>
+                    <div class="col-sm-12 m-3">
+                        <div class="card shadow rounded-pill" style="overflow: hidden; color: gold;">
+                            <div class="card-body p-0">
+                                <div class="row" style="height: 120px;">
+                                    <!-- FIRST TEAM COL -->
+                                    <div 
+                                        class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                        style="border-right: solid 5px #5b0d25; "
+                                    >
+                                        <div class="d-flex align-items-center justify-content-center" >
+                                            <!-- IMAGE AND TEAM NAME DIV -->
+                                            <div>
+                                                <div class="flag">
+                                                    <img 
+                                                        style="width: 40px; height: 40px"
+                                                        class="rounded-circle"
+                                                        src="pays/MAR.png" alt=""
+                                                    >
+                                                </div>
+    
+                                                <h5 style="margin: auto 4px; color: gold;">
+                                                    <b>MAR</b>
+                                                </h5>
+                                            </div>
+                                            <!--// IMAGE AND TEAM NAME DIV// -->
+                                        </div>
+                                    </div>
+                                    <!--// FIRST TEAM COL //-->
+    
+                                    <!-- MATCH INFO COL -->
+                                    <div class="col-sm-6" style="text-align: center; font-family: serif; display: flex; align-items: center; justify-content: center;">
+                                        <h3 style="color: ;" ;">0</h3>
+                                        <h4> _X_ </h4>
+                                        <h3>2</h3>
+                                    </div>
+                                    <!--// MATCH INFO COL //-->
+    
+    
+                                    <!-- SECOND TEAM COL -->
+                                    <div 
+                                        class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                        style="border-left: solid 5px #5b0d25; "
+                                    >
+    
+                                        <div class="d-flex align-items-center justify-content-center" >
+                                            <!-- IMAGE AND TEAM NAME DIV -->
+                                            <div>
+                                                <div class="flag">
+                                                    <img 
+                                                        style="width: 40px; height: 40px"
+                                                        class="rounded-circle"
+                                                        src="pays/FRN.png" alt=""
+                                                    >
+                                                </div>
+    
+                                                <h5 style="margin: auto 4px ; color: gold;">
+                                                    <b>FRA</b>
+                                                </h5>
+                                            </div>
+                                            <!--// IMAGE AND TEAM NAME DIV// -->
+                                        </div>
+                                    </div>
+                                    <!--// SECOND TEAM COL //-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 m-3">
+                        <div class="card shadow rounded-pill" style="overflow: hidden; color: gold;">
+                            <div class="card-body p-0">
+                                <div class="row" style="height: 120px;">
+                                    <!-- FIRST TEAM COL -->
+                                    <div 
+                                        class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                        style="border-right: solid 5px #5b0d25; "
+                                    >
+                                        <div class="d-flex align-items-center justify-content-center" >
+                                            <!-- IMAGE AND TEAM NAME DIV -->
+                                            <div>
+                                                <div class="flag">
+                                                    <img 
+                                                        style="width: 40px; height: 40p;"
+                                                        class="rounded-circle"
+                                                        src="pays/ARG.png" alt=""
+                                                    >
+                                                </div>
+    
+                                                <h5 style="margin: auto 4px; color: gold;">
+                                                    <b>ARG</b>
+                                                </h5>
+                                            </div>
+                                            <!--// IMAGE AND TEAM NAME DIV// -->
+                                        </div>
+                                    </div>
+                                    <!--// FIRST TEAM COL //-->
+    
+                                    <!-- MATCH INFO COL -->
+                                    <div class="col-sm-6" style="text-align: center; font-family: serif; display: flex; align-items: center; justify-content: center;">
+                                        <h3>3</h3>
+                                        <h4> _X_ </h4>
+                                        <h3>0</h3>
+                                    </div>
+                                    <!--// MATCH INFO COL //-->
+    
+    
+                                    <!-- SECOND TEAM COL -->
+                                    <div 
+                                        class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                        style="border-left: solid 5px #5b0d25; "
+                                    >
+    
+                                        <div class="d-flex align-items-center justify-content-center" >
+                                            <!-- IMAGE AND TEAM NAME DIV -->
+                                            <div>
+                                                <div class="flag">
+                                                    <img 
+                                                        style="width: 40px; height: 40px"
+                                                        class="rounded-circle"
+                                                        src="pays/CRO.png" alt=""
+                                                    >
+                                                </div>
+    
+                                                <h5 style="margin: auto 4px; color: gold;">
+                                                    <b>CRO</b>
+                                                </h5>
+                                            </div>
+                                            <!--// IMAGE AND TEAM NAME DIV// -->
+                                        </div>
+                                    </div>
+                                    <!--// SECOND TEAM COL //-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h1 id="h1" data-text="Final">
+                             <b>
+                                 Final
+                             </b>
+                        </h1>
+                        <hr>
+                    <div class="col-sm-12 m-3">
+                        <div class="card shadow rounded-pill" style="overflow: hidden; border: solid 1.5px gold; color: gold;">
+                            <div class="card-body p-0">
+                                <div class="row" style="height: 120px;">
+                                    <!-- FIRST TEAM COL -->
+                                    <div 
+                                        class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                        style="border-right: solid 5px #5b0d25; "
+                                    >
+                                        <div class="d-flex align-items-center justify-content-center" >
+                                            <!-- IMAGE AND TEAM NAME DIV -->
+                                            <div>
+                                                <div class="flag">
+                                                    <img 
+
+                                                        style="width: 40px; height: 40px;webkit-filter: drop-shadow(5px 7px 20px gold);
+                                                        filter: drop-shadow(5px 7px 20px gold);"
+                                                
+                                                        src="pays/ARG.png" alt=""
+                                                        
+                                                    >
+                                                </div>
+    
+                                                <h5 style="margin: auto 4px ; color: gold;">
+                                                    <b>ARG</b>
+                                                </h5>
+                                            </div>
+                                            <!--// IMAGE AND TEAM NAME DIV// -->
+                                        </div>
+                                    </div>
+                                    <!--// FIRST TEAM COL //-->
+    
+                                    <!-- MATCH INFO COL -->
+                                    <div class="col-sm-6" style="text-align: center; font-family: serif; display: flex; align-items: center; justify-content: center;">
+                                       (4) <h3>3</h3>
+                                        <h4> _X_ </h4>
+                                        <h3>3</h3>(2)
+                                    </div>
+                                    <!--// MATCH INFO COL //-->
+    
+    
+                                    <!-- SECOND TEAM COL -->
+                                    <div 
+                                        class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                        style="border-left: solid 5px #5b0d25; "
+                                    >
+    
+                                        <div class="d-flex align-items-center justify-content-center" >
+                                            <!-- IMAGE AND TEAM NAME DIV -->
+                                            <div>
+                                                <div class="flag">
+                                                    <img 
+                                                        style="width: 40px; height: 40px"
+                                                        class="rounded-circle"
+                                                        src="pays/FRN.png" alt=""
+                                                    >
+                                                </div>
+    
+                                                <h5 style="margin: auto 4px;color: gold;">
+                                                    <b>FRA</b>
+                                                </h5>
+                                            </div>
+                                            <!--// IMAGE AND TEAM NAME DIV// -->
+                                        </div>
+                                    </div>
+                                    <!--// SECOND TEAM COL //-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+                
+            </div>
+            
+            
+        
+        </div>
+        
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
